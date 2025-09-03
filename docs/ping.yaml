@@ -41,9 +41,18 @@ paths:
       responses:
         '200':
           description: ok
-          
-
-
-
-
-                 
+          content:
+            application/json:
+              schema:
+                 $ref: '#/components/schemas/Car'
+components:
+  schemas:
+    Car:
+      type: object
+      properties:
+        identifier :
+          type: string
+        brand: 
+          type: string
+        model: 
+          type: string  
